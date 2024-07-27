@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="shortcut icon" href=".//images/parkhere logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Park Here | Find Safest Parking Spot</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <style>
+        @media (max-width:650px) {
+            .container--{
+                overflow: hidden;
+            }
+            header{
+                max-width: 100%;
+            }
+            .main-header{
+                width: auto;
+            }
+            .main-line-head{
+                margin-right: auto;
+                width: auto;
+                justify-content: center;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container--">
+    <header>
+        <div class="main-header">
+        <h1>PARK HERE</h1>
+        </div>
+        <div  class="main-line-head">
+            <button class="main-button" onclick="func1();" >Sign Up</button>
+            <button class="main-button1" onclick="func();" >Log in</button>
+        </div>
+    </header>
+    <div class="main">
+        <div class="main-content">
+            <h1 class="green" ><strong>The smarter way </strong>to find parking</h1> <br><br>
+            
+            <div class="main-div">
+                <div class="main-mm">
+                <h2>SELECT DATE </h2><br> <input class="calender" type="date" name="date" id="date"> </div> <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28577.40779463361!2d80.354367!3d26.450056!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c4714929b21b9%3A0xe6b6ecfead3ae289!2sGhanta%20Ghar%20Chauraha!5e0!3m2!1sen!2sin!4v1701409962338!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img height="400px" src="https://images.justpark.com/eyJidWNrZXQiOiJqdXN0cGFyay1pbWFnZS1yZXNpemVyLXByb2R1Y3Rpb24iLCJrZXkiOiJob21lL2hlcm8tMi5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjEyNTAsImhlaWdodCI6MTI1MCwiZml0IjoiY292ZXIifSwianBlZyI6eyJxdWFsaXR5Ijo3MH0sIndlYnAiOnsicXVhbGl0eSI6NzB9fX0=" alt="">
+            </div>
+        </div>
+        
+       
+    </div>
+    
+    <div class="main1">
+        <div class="main1-content">
+            <input class="location-button" type="text" name="LOCATION" placeholder="LOCATION" id="location">
+        </div>
+    </div>
+    <div class="last-page">
+        <div class="last-header">
+            <div class="last-content">
+                <div class="first-one">
+                <h1>Subscribe for exclusive deals</h1> <br>
+                <h2>Sign up for our email list to get secret coupons!</h2>
+                </div>
+                <div class="subscribe">
+                <input type="email" placeholder="type your email" id="email" name="email">
+                <button type="submit" onclick="func2();" >SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="last-page-content">
+            <h1>Follow Us</h1>
+            <div class="lastone">
+                <div class="haha">
+              <a href="" target="_blank" > <h2>Facebook</h2></a>  <i class="fa-brands fa-facebook"></i> </div>
+                <div class="haha"><a target="_blank" href="https://Instagram.com/aditya._saini._/">  <h2>Instagram</h2></a> <i class="fa-brands fa-instagram"></i></div>
+                    <div class="haha"> <a href="" target="_blank"> <h2>LinkedIn</h2> </a><i class="fa-brands fa-linkedin"></i></div>
+                        <div class="haha"><a href="" target="_blank" > <h2>Pinterest</h2> </a><i class="fa-brands fa-pinterest"></i></div>
+
+            </div> 
+        </div>
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+<script src="./javascripts/script.js"></script>
+    <script>
+        function func(){
+            window.location.assign("login");
+
+        }
+        function func1(){
+            window.location.assign("signup");
+
+        }
+        function func2(){
+            window.location.assign("subscribe");
+
+        }
+    </script>
+</body>
+</html>

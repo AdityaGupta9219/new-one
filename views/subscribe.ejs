@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href=".//images/parkhere logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+    
+    <title>subscribe</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .main{
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            filter: blur(5px);
+            background-size: cover;
+            background-image: url("https://png.pngtree.com/thumb_back/fh260/back_our/20190628/ourmid/pngtree-pink-underground-parking-lot-background-image_279994.jpg");
+        }
+        .main1{
+            height: 400px;
+            width: 500px;
+            background-color: rgb(97, 239, 97);
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 33.3%;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+        .main1-content{
+            background-color: rgb(97, 239, 97);
+            align-items: center;
+        }
+        @media (max-width:600px) {
+            .main1{
+                margin: 0;
+                margin-top: 100px;
+                width: 100%;
+                border-radius: 20px;
+            }
+            .main1-content{
+                align-items: center;
+            }
+            hr{
+                display: none;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <form >
+        <main>
+        </main>
+        <div class="main">
+        </div>
+        <div class="main1">
+            <h1>SUBSCRIBE WITH US</h1>
+            <div class="main1-content"> <br> <h1>PAYEMENT OPTIONS</h1>
+                <i class="fa-solid fa-credit-card"></i>&nbsp;<select required  style="height: 50px; width: 200px;border-radius: 20px;border: none;text-align: center;font-size: 18px;" id="payment">payment
+                    <option>paytm</option> <br>
+                    <option>Gpay</option>
+                    <option>Net Banking</option>
+                </select>  <br> <hr> <br>
+                <i class="fa-solid fa-envelope"></i>&nbsp; <input required class="none" style="height: 50px; width: 200px;border-radius: 20px;border: none;text-align: center;font-size: 18px;" type="email" placeholder="Type your gmail">    <br><hr><br>
+                <i class="fa-solid fa-lock"></i></i>&nbsp; <input required  class="none" style="height: 50px; width: 200px;border-radius: 20px;border: none;text-align: center;font-size: 18px;" type="password" placeholder="Type your Password"> <br><hr>
+                <h3>Last Password?</h3><a href="#">Click here</a>
+            </div>
+            <button onclick="func();" class="submit-button" style=" height: 60px;width: 100px;font-size: 20px;border-radius: 40px;background-color: white;cursor: pointer;" type="submit" >submit</button>
+    
+        </div>
+    </form>
+    <script type="text/javascript">
+       function func(){
+            window.location.assign("/");
+
+        }
+    </script>
+</body>
+</html>

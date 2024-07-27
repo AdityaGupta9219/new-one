@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="/stylesheets/profile.css">
+</head>
+<body>
+    <div id="algn">
+      <button id="faltu" onclick="
+        document.querySelector(`#faltu`).addEventListener('click',function(){
+          var name = '<%=name%>';
+          window.location.assign(`home${name}`);
+        })
+      "   >home page</button>
+        <div id="card">
+            <div id="upper-bg">
+              <input type="file" name="imageFile" id="imageFile" accept="image/*" onchange="previewImage(event)">
+            </div>
+            <div id="lower-bg">
+              <div class="text">
+                <p class="name"><%= name%></p>
+                <p class="title">Web developer & <br> Competitive programmer</p>
+              </div>
+              <div id="icons">
+                <a href="#" class="ico"><img width="48" height="48" src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new"/></a>
+                <a href="#" class="ico">
+                  <img width="48" height="48" src="https://img.icons8.com/fluency/48/github.png" alt="github"/>
+                </a>
+                <a href="#" class="ico">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/>
+                </a>
+                <a href="#" class="ico">
+                  <img width="48" height="48" src="https://img.icons8.com/color/48/facebook-new.png" alt="facebook-new"/>
+                </a>
+              </div>
+              <div id="btn">
+                <button class="msg">Subscribe</button>
+                <button class="msg">Message</button>
+              </div>
+              <div id="l-c-s">
+                <div class="num">
+                  <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/facebook-like--v1.png" alt="facebook-like--v1"/>
+                  <span>35k</span>
+                </div>
+                <div class="num dvr"></div>
+                <div class="num">
+                  <img width="48" height="48" src="https://img.icons8.com/fluency-systems-regular/48/speech-bubble--v1.png" alt="speech-bubble--v1"/>
+                  <span>20k</span>
+                </div>
+                <div class="num dvr"></div>
+                <div class="num">
+                  <img width="48" height="48" src="https://img.icons8.com/pulsar-line/48/share.png" alt="share"/>
+                  <span>15k</span>
+                </div>
+              </div>
+            </div>
+        </div> 
+        </div>
+        <div class="license">
+            <div class="ll"><a  href="https://icons8.com/icon/P7UIlhbpWzZm/gmail">Gmail</a> icon by <a href="https://icons8.com">Icons8</a></div>
+            <div class="ll"><a  href="https://icons8.com/icon/AZOZNnY73haj/github">GitHub</a> icon by <a href="https://icons8.com">Icons8</a></div>
+            <div class="ll"><a  href="https://icons8.com/icon/13930/linkedin">LinkedIn</a> icon by <a href="https://icons8.com">Icons8</a></div>
+            <div class="ll"><a  href="https://icons8.com/icon/118497/facebook">Facebook</a> icon by <a href="https://icons8.com">Icons8</a></div>
+            <div class="ll"><a  href="https://icons8.com/icon/u8MTpAq972MG/like">Like</a> icon by <a href="https://icons8.com">Icons8</a></div>
+            <div class="ll"><a  href="https://icons8.com/icon/8h51YOzhBJmT/comment">Comment</a> icon by <a href="https://icons8.com">Icons8</a></div>
+        </div>
+        <script>
+          function previewImage(event) {
+              var reader = new FileReader();
+              reader.onload = function(){
+                  var preview = document.getElementById('preview');
+                  preview.src = reader.result;
+                  preview.style.display = 'block';
+              };
+              reader.readAsDataURL(event.target.files[0]);
+          }
+      </script>
+</body>
+</html>

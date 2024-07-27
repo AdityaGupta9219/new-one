@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href=".//images/parkhere logo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+    <title>Sign UP | Page</title>
+    <style>
+         *{
+            margin: 0;
+            padding: 0;
+
+        }
+        html,body{
+            height: 100%;
+            width: 100%;
+            
+        }
+        .main{
+            height: 100vh;
+            width: 100%;
+            background-image: url("/images/signupBackground.jpg");
+            background-size: cover;
+            filter: blur(10px);
+            position: absolute;
+        }
+        .main1{
+            height: 400px;
+            width: 500px;
+            background-color: rgb(97, 239, 97);
+            position: absolute;
+            margin-top: 200px;
+            margin-left: 33.3%;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: white;
+        }
+        .main1-content{
+            background-color: rgb(97, 239, 97);
+           
+        }
+        @media (max-width:600px) {
+            .main1{
+                margin: 0;
+                margin-top: 100px;
+                width: 100%;
+                border-radius: 20px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    </div>
+    <div class="main1">
+        <h1>SIGNUP</h1>
+        <form class="main1-content" action="/register" method="post">
+         <br>
+            <i class="fa-solid fa-user"></i>&nbsp;<input required style="height: 50px; width: 200px;border-radius: 20px;border: none;text-align: center;font-size: 18px;" type="name" name="username" placeholder="Name"> <br> <hr> <br>
+            <i class="fa-solid fa-envelope"></i>&nbsp; <input required class="none" style="height: 50px; width: 200px;border-radius: 20px;border: none;text-align: center;font-size: 18px;" type="email" name="email" placeholder="Type your gmail">    <br><hr><br>
+            <i class="fa-solid fa-lock"></i></i>&nbsp; <input required class="none" style="height: 50px; width: 200px;border-radius: 20px;border: none;text-align: center;font-size: 18px;" type="password" name="password" placeholder="Type your Password"> <br><hr> <br>
+        
+        <button onclick="func();" class="submit-button" style=" height: 60px;width: 100px;font-size: 20px;border-radius: 40px;background-color: white;" name="submit" type="submit">submit</button>
+        </form>
+    </div>
+    <script>
+        function func() {
+            window.location.assign("/profile");   
+        }
+    </script>
+</body>
+</html>
